@@ -8,4 +8,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT02 GDD
 * BT03 Setting Up the Github Repository
 * BT04 Creating and Deleting Landscapes
+* BT05 Setup and Scaling Landscapes
 

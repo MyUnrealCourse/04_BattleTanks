@@ -12,4 +12,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT06 A Landscaping Process
 * BT07 Upgrading Version (no Commit)
 * BT08 Using Landscape Layers
+* BT09 Flat Shading Low Poly Landscape
 

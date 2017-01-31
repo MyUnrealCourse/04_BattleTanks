@@ -10,4 +10,6 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT04 Creating and Deleting Landscapes
 * BT05 Setup and Scaling Landscapes
 * BT06 A Landscaping Process
+* BT07 Upgrading Version (no Commit)
+* BT08 Using Landscape Layers
 

@@ -22,9 +22,24 @@ void ATankPlayerController_CPP::BeginPlay()
 
 }
 
+void ATankPlayerController_CPP::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	UE_LOG(LogTemp, Warning, TEXT("Tick method is working"));
+}
+
 
 ATank* ATankPlayerController_CPP::GetControlledTank() const
 {
 	return Cast<ATank>(GetPawn());
 }
 
+void ATankPlayerController_CPP::AimTowardCrosshair()
+{
+	if (!GetControlledTank()) { return;  }
+
+	//Get World location if line trace through crosshair 
+	// if it hits the landscape
+		//start moving barrel toward location
+}

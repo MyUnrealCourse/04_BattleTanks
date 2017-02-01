@@ -28,5 +28,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT22 Using Virtual and Override
 * BT23 Creating an AI Controller Class
 * BT24 Get the Player Controller with C++
-
+* BT25 Add Tick() to Player Controller
 

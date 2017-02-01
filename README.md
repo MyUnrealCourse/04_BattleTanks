@@ -29,4 +29,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT23 Creating an AI Controller Class
 * BT24 Get the Player Controller with C++
 * BT25 Add Tick() to Player Controller
-
+* BT26 Creating an OUT Parameter

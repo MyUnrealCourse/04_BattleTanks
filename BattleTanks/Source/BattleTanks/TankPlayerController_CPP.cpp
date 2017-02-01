@@ -26,7 +26,8 @@ void ATankPlayerController_CPP::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	UE_LOG(LogTemp, Warning, TEXT("Tick method is working"));
+	//UE_LOG(LogTemp, Warning, TEXT("Tick method is working"));
+	AimTowardCrosshair();
 }
 
 
@@ -39,7 +40,29 @@ void ATankPlayerController_CPP::AimTowardCrosshair()
 {
 	if (!GetControlledTank()) { return;  }
 
+	FVector HitLocation; //out parameter
+	
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *HitLocation.ToString());
+
 	//Get World location if line trace through crosshair 
 	// if it hits the landscape
+	if (GetSightRayHitLocation(HitLocation))
+	{
 		//start moving barrel toward location
+
+	}
+	else
+	{
+		return;
+	}
+		
+}
+
+bool ATankPlayerController_CPP::GetSightRayHitLocation(FVector& HitLocation) const
+{
+	//linetrace out through the crosshair
+	//if we hit a world location
+		//set HitLocation to this spot
+		//return true
+	//else retrurn false
 }

@@ -16,4 +16,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT10 More Landscaping Tools
 * BT11 Tank Control System (no commit)
 * BT12 Actors From Multiple Meshes
+* BT13 Configuring a Tank
 

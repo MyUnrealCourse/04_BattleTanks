@@ -25,5 +25,7 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT19 Controller Ready Navigation
 * BT20 Trial Packaging Your Game
 * BT21 Delegating to Components
+* BT22 Using Virtual and Override
+
 
 

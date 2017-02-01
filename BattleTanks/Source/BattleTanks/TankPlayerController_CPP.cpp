@@ -20,7 +20,6 @@ void ATankPlayerController_CPP::BeginPlay()
 		UE_LOG(LogTemp, Warning, TEXT("%s is the tank controlled."), *TankName);
 	}
 
-	UE_LOG(LogTemp, Warning, TEXT("Player Controller in Begin Play"));
 }
 
 

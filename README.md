@@ -21,4 +21,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT15 Fixing 3rd Person Camera Rotation
 * BT16 User Interface (UI) in Unreal
 * BT17 Main Menu Screens
+* BT18 UI Scale Box, Buttons & Mouse
 

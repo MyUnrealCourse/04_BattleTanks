@@ -41,15 +41,12 @@ void ATankPlayerController_CPP::AimTowardCrosshair()
 	if (!GetControlledTank()) { return;  }
 
 	FVector HitLocation; //out parameter
-	
-	//UE_LOG(LogTemp, Warning, TEXT("%s"), *HitLocation.ToString());
-
-	//Get World location if line trace through crosshair 
+	//Get World location of line trace through crosshair 
 	// if it hits the landscape
 	if (GetSightRayHitLocation(HitLocation))
 	{
 		//start moving barrel toward location
-
+		UE_LOG(LogTemp, Warning, TEXT("HitPosition: %s"), *HitLocation.ToString());
 	}
 	else
 	{
@@ -64,21 +61,34 @@ bool ATankPlayerController_CPP::GetSightRayHitLocation(FVector& HitLocation) con
 	int32 ViewportSizeX, ViewportSizeY; //get the size of the viewport
 	GetViewportSize(ViewportSizeX, ViewportSizeY);
 	auto ScreenLocation = FVector2D((ViewportSizeX * CrosshairXLocation),(ViewportSizeY * CrosshairYLocation));
-	//UE_LOG(LogTemp, Warning, TEXT("Screen Location: %s"), *ScreenLocation.ToString());
 	
 	// de-project screen position to a world direction
 	FVector LookDirection;
 	if (GetLookDirection(ScreenLocation, LookDirection))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("WorldPosition: %s"), *LookDirection.ToString());
+		//Linetrace in the look direction to see if it hits anything
+		GetLookVectorHitLocation(LookDirection, HitLocation);
 	}
-
-	//linetrace out through the crosshair
-	//if we hit a world location
-		//set HitLocation to this spot
-		//return true
-	//else retrurn false
 	return true;
+}
+
+bool ATankPlayerController_CPP::GetLookVectorHitLocation(FVector LookDirection, FVector& HitLocation) const
+{
+	FHitResult HitResult;
+	FVector LineStart = PlayerCameraManager->GetCameraLocation();
+	FVector LineEnd = LineStart + (LookDirection * LineTraceRange);
+	if (GetWorld()->LineTraceSingleByChannel(
+			HitResult, 
+			LineStart, 
+			LineEnd, 
+			ECollisionChannel::ECC_Visibility))
+	{
+		//set the hit location
+		HitLocation = HitResult.Location;
+		return true;
+	}
+	HitLocation = FVector(0);
+	return false;
 }
 
 bool ATankPlayerController_CPP::GetLookDirection(FVector2D ScreenLocation, FVector & LookDirection) const

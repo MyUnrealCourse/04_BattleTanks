@@ -31,3 +31,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT25 Add Tick() to Player Controller
 * BT26 Creating an OUT Parameter
 * BT27 Finding Screen Pixel Coordinates
+* BT28 Using DeprojectScreenLocationToWorld

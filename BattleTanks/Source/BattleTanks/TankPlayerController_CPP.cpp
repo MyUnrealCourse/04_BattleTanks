@@ -46,7 +46,7 @@ void ATankPlayerController_CPP::AimTowardCrosshair()
 	if (GetSightRayHitLocation(HitLocation))
 	{
 		//start moving barrel toward location
-		UE_LOG(LogTemp, Warning, TEXT("HitPosition: %s"), *HitLocation.ToString());
+		GetControlledTank()->AimAt(HitLocation);
 	}
 	else
 	{

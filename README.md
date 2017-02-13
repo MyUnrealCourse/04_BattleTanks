@@ -37,3 +37,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT31 Create Default Sub Objects in C++
 * BT32 Blueprint Callable
 * BT33 SuggestProjectileVelocity
+* BT34 Predict Projectile Landing Point

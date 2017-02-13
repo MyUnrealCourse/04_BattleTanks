@@ -36,3 +36,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT30 Unifying Player & AI Aiming
 * BT31 Create Default Sub Objects in C++
 * BT32 Blueprint Callable
+* BT33 SuggestProjectileVelocity

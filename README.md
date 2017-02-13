@@ -34,3 +34,5 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT28 Using DeprojectScreenLocationToWorld
 * BT29 Using LineTraceSingleByChannel
 * BT30 Unifying Player & AI Aiming
+* BT31 Create Default Sub Objects in C++
+* BT32 Blueprint Callable

@@ -38,3 +38,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT32 Blueprint Callable
 * BT33 SuggestProjectileVelocity
 * BT34 Predict Projectile Landing Point
+* BT35 Using FRotators in Unreal

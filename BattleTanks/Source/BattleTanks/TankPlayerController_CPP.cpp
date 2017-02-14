@@ -17,7 +17,7 @@ void ATankPlayerController_CPP::BeginPlay()
 	{
 		FString TankName;
 		TankName = ControlledTank->GetName();
-		UE_LOG(LogTemp, Warning, TEXT("%s is the tank controlled."), *TankName);
+		//UE_LOG(LogTemp, Warning, TEXT("%s is the tank controlled."), *TankName);
 	}
 
 }

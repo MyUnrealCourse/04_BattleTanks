@@ -28,7 +28,7 @@ void ATankAIController::BeginPlay()
 
 			TankName = ControlledTank->GetName();
 			PlayerTankName = MyPlayerTank->GetName();
-			UE_LOG(LogTemp, Warning, TEXT("%s is the tank targeted by %s."), *PlayerTankName, *TankName);
+			//UE_LOG(LogTemp, Warning, TEXT("%s is the tank targeted by %s."), *PlayerTankName, *TankName);
 		}
 	}
 }

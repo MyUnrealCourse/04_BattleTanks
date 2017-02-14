@@ -40,3 +40,4 @@ This small game is built over many lectures during the Unreal Editor Developer c
 * BT34 Predict Projectile Landing Point
 * BT35 Using FRotators in Unreal
 * BT36 Using Forward Declarations
+* BT37 Blueprint Spawnable Components
